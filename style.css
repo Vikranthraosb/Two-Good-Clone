@@ -1,0 +1,243 @@
+@font-face {
+    font-family: vikranth;
+    src: url(HelveticaNowText-Regular.ttf);
+}
+*::selection{
+    color: rgb(0, 209, 0);
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: rgb(0, 0, 0)
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+cursor: pointer;
+}
+.nav{
+    height:750px;
+    width: 100vw;
+    /* background-color: #F7F7F7; */
+    position: fixed;
+    z-index: 11;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-transform: uppercase;
+text-decoration: none;
+}
+.nav-part1{
+
+    /* background-color: red; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+}
+.nav-part1 svg{
+    color: brown;
+}
+.nav-part2{
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 40px;
+}
+.nav-part2 .icons{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-part2 .links{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+  }
+.cursor{
+    height: 420px;
+    width: 420px;
+    border-radius: 50%;
+    background-color: rgba(102, 51, 153, 0.542);
+    position: fixed;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    scale: 0;
+    mix-blend-mode:exclusion;
+    
+}
+.page1{
+    background-color: #F7F7F7;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0 1.3vw;
+    padding-top: 13vh;
+    position: relative;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.page1 h1{
+    text-align: center;
+    font-size: 12vw;
+    text-transform: uppercase;
+    font-family:vikranth;
+    line-height: 13vw;
+    letter-spacing: -9px;
+}
+.video-container{
+    background-color: rgb(255, 243, 221);
+    height: 97vh;
+    width: 97vw;
+    position: relative;
+}
+.video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.video-container .play{
+    padding: 1.8vw 2vw;
+    font-size: 1.3vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: vikranth;
+    border-radius: 50%;
+    position: absolute;  /* if it is not applied, this div will take more size */
+    opacity: 0;
+    scale: 0;
+    transform: translate(-50%,-50%);
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F7F7;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 3vh 1vw;
+   
+}
+.page2 .elem{
+    height: 100%;
+    width: 32%;
+    background-color: #F7F7F7;
+    position: relative;
+    overflow: hidden;
+    
+}
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale:1.33;
+}
+.details{
+    height: 80px;
+    width: 85%;
+    background-color: rgb(237, 150, 164);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 60px;
+}
+.details:hover{
+    height: 180px;
+    transition: all ease .4s;
+}
+.page3{
+    min-height: 120vh;
+    width: 100vw;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page3 .child{
+    margin-top: 3vw;
+    height: 55vh;
+    width: 37vw;
+    /* background-color: red; */
+    border-radius: 47px;
+    position: relative;
+
+    
+}
+.page3 .child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    scale: .8;
+}
+
+
+@media (max-width:600px){
+
+.page1{
+  width: 100vw;
+  margin-bottom: 2.5px;
+  min-height: 70vh;
+}
+.page1 h1{
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+.video-container{
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-container .play{
+   
+    padding: 4vw 4vw;
+    font-size: 5vw;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: vikranth;
+    border-radius: 50%;
+   position: absolute;  /* if it is not applied, this div will take more size */
+   opacity: .6;
+   scale: 1;
+   
+}
+.page2{
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+   
+    padding: 3px 3px;
+   
+}
+.page2 .elem{
+    height: 49vh;
+    width: 98.3%;
+    background-color: black;
+    
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
